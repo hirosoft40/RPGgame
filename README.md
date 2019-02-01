@@ -3,21 +3,40 @@ This is a terminal based RPG Game programed in Python 3. I made this game in Wee
 
 ## Characters
 <b>Hero's detail</b>
- : has 10 health points.
- : has 2 power points.
- : has 20 coins.
- : don't have any items.
+<img src ='screenshots/gems.png'>
 
 <b>Enemies</b>
- ------------------------------------------
- name | health | power | detail
- ------------------------------------------
-Zombie |   5   |   3   | Can live up to 5 battles after 1st death
-Shadow |   1   |   2   | Take damage only once in 10 times
-Medic  |   3   |   3   | 20% of time, he gets his health back by 2.
-Goblin |   6   |   2   | 20% of time, he hits himself. Lousy Goblin.
-Bishop |   8   |   4   | 10% of time, he mistakenly gives health point.
-Ninja |   7   |   3   | 20% of time, he can bounce back the hit
+<img src ='screenshots/enemy_list.png'>
+
+## Actions
+Here is the list of actions that the player can take.
+<img src ='screenshots/actions.png'>
+
+1. fight enemies
+You can fight enemies. 
+The game will ask you whether you would like to use items.
+<img src ='screenshots/have_items.png'>
+
+If you don't have items, the game will continue playing.
+<img src ='screenshots/no_items.png'>
+
+2. do nothing
+The enemy will attack you.
+
+3. flee
+This will end the game.
+
+4. go to the store.
+You can purchase items to attack enemies.
+<img src ='screenshots/items.png'>
+
+5. view character list
+This will show list of enemies which is listed above on Characters.
+
+6. go to gem mountain
+You can play "Guess a number" game to earn 5 points if you are lucky :)
+<img src ='screenshots/gems.png'>
+
 
 ## How to play:
 1. If you don't have python3 (If you have Python3, skip this.)
@@ -40,11 +59,10 @@ I have implemented few things so that a game beginner like myself can enjoy also
 <ol>
 <h3><li> Gem Mountain</li></h3>
 <p>Users mind changes. Sometimes they want to play games, sometimes they are tired of attacking. So, I have created gem Mountain to play a very simple game. </p>
-<img src ='screenshots/gems.jpg'>
 
 <h3><li> Anime style emotions </li></h3>
 <p>I have added Anime style emotions so that users can enjoy more without reading letters.</p>
-<img src ='screenshots/face.jpg'>
+<img src ='screenshots/face.png'>
 
 <h3><li> Error Handlings </li></h3>
 <p>This game prompt user inputs. Therefore I spent more time on coding error handling.</p>
