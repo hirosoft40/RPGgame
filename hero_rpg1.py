@@ -1,5 +1,9 @@
+# RPG Game by Hiroko Ross
+# Nov 2018 / python3
+
 import random
 
+# list of items that the player can use
 items = [
         ["evade", 2, ' can\'t get hit'],
         ["amore", 3, ' does not get damaged'],
@@ -9,6 +13,7 @@ items = [
         ["swap", 2, ' swap power with enemy'],
         ["changed my mind. Go back to main menu.", " ", " "]]
 
+# list of actions
 actions = ['fight enemies', 'do nothing','flee', 'go to the store','view character list', 'go to gem mountain']
 
 class Character():
@@ -30,7 +35,7 @@ class Character():
                     shadow.damage(self)  
                 elif enemy.name.lower() == 'ninja':
                     ninja.attackBounceBack(self)
-                elif enemy.name.lower() == 'medic': 
+                elif enemy.name.lower() == ' medic ': 
                     medic.recuperated(enemy)
             elif self.name.lower() == 'goblin':
                 goblin.damageHimself(enemy)
@@ -286,15 +291,7 @@ bishop = Bishop(8, 4, 6)
 goblin = Goblin(6, 2, 4)
 ninja = Ninja(7,3,5)
 
-# # In this simple RPG game, the hero fights the goblin. He has the options to:
-
-# # 1. fight goblin
-# # 2. do nothing - in which case the goblin will attack him anyway
-# # 3. flee
-# #!/usr/bin/env python
-
-import random 
-
+# ====== GEM MOUNTAIN to play guess a number game =========
 def number_game():
     num = random.randint(1,10) # secret number
     print(" Can you guess the number?")
@@ -322,7 +319,7 @@ def number_game():
                 print (" ")
                 return 0
 
-# Function to handle error for user input
+# ====== Function to handle error for user input ==========
 def getInput(res, len_num):
     print(f"What would you like to {res}?: ")
     print("> ", end=' ')
