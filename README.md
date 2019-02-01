@@ -16,7 +16,7 @@ Here is the list of actions that the player can take.
 You can fight enemies. 
 The game will ask you whether you would like to use items.
 <img src ='screenshots/have_items.png'>
-
+<br>
 If you don't have items, the game will continue playing.
 <img src ='screenshots/no_items.png'>
 
@@ -28,7 +28,7 @@ This will end the game.
 
 4. go to the store.
 You can purchase items to attack enemies.
-<img src ='screenshots/items.png'>
+<img src ='screenshots/items.png' style="width:50%">
 
 5. view character list
 This will show list of enemies which is listed above on Characters.
